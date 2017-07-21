@@ -12,6 +12,7 @@ avatar = media.Movie("Avatar",
 
 def main():
 	print(avatar.storyline)
+	avatar.showtrailer()
 
 if __name__ == '__main__':
 	main()

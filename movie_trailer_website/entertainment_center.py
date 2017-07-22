@@ -1,4 +1,5 @@
 import media
+import fresh_tomatoes
 
 movies = []
 toy_story = media.Movie("Toy Story",
@@ -19,15 +20,7 @@ negotiator = media.Movie("The Negotiator",
 movies.append(negotiator)
 
 def main():
-	print("The following trailers are available to watch:")
-	for movie in movies:
-		print(movie.title)
-		print("\t"+movie.storyline)
-
-	title_select = raw_input("Which movie trailer would you like to watch?")
-	for movie in movies:
-		if movie.title.lower() == title_select.lower():
-			movie.show_trailer()
+	fresh_tomatoes.open_movies_page(movies)
 
 if __name__ == '__main__':
 	main()

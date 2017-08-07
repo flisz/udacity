@@ -1,2 +1,5 @@
 # ignore all python cache files
 *.pyc
+# ignore all data files
+*/data
+

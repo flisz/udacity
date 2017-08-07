@@ -2,4 +2,6 @@
 *.pyc
 # ignore all data files
 */data
-
+# ignore all temporary text editor files
+*~
+*.swp

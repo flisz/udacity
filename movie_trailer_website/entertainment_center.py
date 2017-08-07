@@ -1,6 +1,7 @@
 import media
 import fresh_tomatoes
-
+import errno
+import csv
 movies = []
 #toy_story = media.Movie("Toy Story",
 #						"A Story of a boy + toys",
@@ -20,8 +21,7 @@ movies = []
 #movies.append(negotiator)
 #
 def fetch_data_file():
-    file_path = /data/movie_data.csv 
-    file_path = str(file_path)
+    file_path = "data/movie_data.csv"
     print("Attempting to open file: "+file_path)
     try:
         file = open(file_path,"r") #open file for 'r' reading
@@ -34,12 +34,12 @@ def fetch_data_file():
 
 def parse_data_file(file):
     movies = []
-    for LineNumber, Line in enumerate(file.readline, b'')):
-        Columns=Line.split(',')
-        movie = media.Movie(data[1], #movie_title
-                            data[2], #movie_storyline
-                            data[3], #poster_image
-                            data[4]) #trailer_youtube
+    for RowNumber, Data in enumerate(iter(csv.reader(file), b'')):
+        print(Data)
+        movie = media.Movie(Data[0], #movie_title
+                            Data[1], #movie_storyline
+                            Data[2], #poster_image
+                            Data[3]) #trailer_youtube
         movies.append(movie)
     return movies
 

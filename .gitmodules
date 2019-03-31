@@ -1,0 +1,3 @@
+[submodule "fsnd/2019/vm/git-fullstack"]
+	path = fsnd/2019/vm/git-fullstack
+	url = https://github.com/flisz/fullstack-nanodegree-vm

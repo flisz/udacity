@@ -1,4 +1,4 @@
-# udacity --> Central nexus my Udacity course work
+# udacity --> Central nexus for my Udacity course work
 ## Start-up
 clone repo from github:
 ``` git clone https://github.com/flisz/udacity.git ```

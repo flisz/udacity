@@ -6,7 +6,7 @@ chardet==3.0.4
 click==6.7
 configobj==5.0.6
 constantly==15.1.0
-cryptography==2.1.4
+cryptography==3.2
 get==2018.11.19
 hyperlink==17.3.1
 idna==2.8

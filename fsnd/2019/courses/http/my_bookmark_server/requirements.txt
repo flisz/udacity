@@ -11,7 +11,7 @@ get==2018.11.19
 hyperlink==17.3.1
 idna==2.8
 incremental==16.10.1
-Jinja2==2.10
+Jinja2==2.11.3
 jsonpatch==1.16
 jsonpointer==1.10
 jsonschema==2.6.0
